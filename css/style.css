@@ -168,12 +168,16 @@
 
 #logo
 {
+    height: inherit;
     padding-left: 1em;
+    display: flex;
+    align-items: center;
 }
 
     #logo h1 {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
+        margin: 0px;
     }
 
 /*********************************************************************************/
