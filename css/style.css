@@ -4,35 +4,91 @@
 
 #header
 {
-    position: relative;
-    background: #fff;
+    background: #202124ff;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(45, 45, 45, 0.5);
 }
 
-#header .container
+.headerLeft
 {
-    position: relative;
-    padding: 4em 0em;
+    background: inherit;
+    width: 25%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
 
-/*********************************************************************************/
-/* Nav                                                                           */
-/*********************************************************************************/
+.headerMiddle{
+    background: inherit;
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
-#nav
+/* SEARCHBAR */
+
+.headerMiddle form {
+    display: flex;
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.headerMiddle input[type="text"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-right: -1px;
+    font-size: 16px;
+    border: 2px solid #34495E;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: white;
+    background-color: #34495E;
+}
+
+.headerMiddle input::placeholder {
+    color: #95A5A6;
+}
+
+.headerMiddle button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.headerMiddle button[type="submit"]:hover {
+    background-color: #1ABC9C;
+}
+
+.headerRight
 {
-    position: absolute;
-    right: 0em;
-    top: 2.2em;
+    background: inherit;
+    width: 25%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Nav */
 
 #nav > ul > li
 {
     float: left;
-}
-
-#nav > ul > li:last-child
-{
-    padding-right: 0;
 }
 
 #nav > ul > li > a,
@@ -61,9 +117,7 @@
     display: none;
 }
 
-/*********************************************************************************/
-/* Menu                                                                          */
-/*********************************************************************************/
+/* Menu */
 
 #menu {
     width: 40px;
@@ -96,35 +150,66 @@
 }
 
 .bar1, .bar2, .bar3 {
-    width: 23px; /* width of the bars */
-    height: 3px; /* thickness of the bars */
-    background-color: #333; /* color of the bars */
+    width: 19px; /* width of the bars */
+    height: 2px; /* thickness of the bars */
+    background-color: #9aa0a6ff; /* color of the bars */
     transition: 0.4s;
     border-radius: 5px;
   }
 
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
+/* Logo */
 
 #logo
 {
-    position: absolute;
-    left: 3em;
-    top: 3em;
+    padding-left: 1em;
 }
 
-    #logo h1
-    {
-    }
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
 
-    #logo a
-    {
-        display: block;
-        text-decoration: none;
-        font-size: 2.8em;
-        font-weight: 600;
-    }
+#footer
+{
+    background: #202124ff;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(45, 45, 45, 0.5);
+}
+
+.footerLeft
+{
+    background: inherit;
+    width: 25%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.footerMiddle{
+    background: inherit;
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerRight
+{
+    background: inherit;
+    width: 25%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 /*********************************************************************************/
 /* Main                                                                          */
