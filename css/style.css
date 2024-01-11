@@ -229,6 +229,77 @@
 }
 
 /*********************************************************************************/
+/* dialog popup                                                                   */
+/*********************************************************************************/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black with higher opacity for better focus on modal */
+}
+
+/* Modal Content box styling */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; /* Lowered percentage to bring modal higher on the page */
+    padding: 40px; /* More padding for a better visual appeal */
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* No border for a cleaner look */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    max-width: 600px; /* Maximum width so it doesn't get too wide on larger screens */
+    width: 90%; /* Responsive width */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Close button styling */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 35px; /* Larger close button for easier click */
+    font-weight: bold;
+    margin-left: 20px; /* Added space between text and close button */
+}
+
+/* Hover/active states for close button */
+.close:hover,
+.close:focus {
+    color: #333; /* Darker color for contrast */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Text and link styling inside modal */
+.modal p {
+    margin: 0px; /* Space out text */
+    color: #333; /* Darker text for readability */
+    font-size: 16px; /* Standard text size */
+}
+
+.modal a {
+    display: inline-block; /* Allows margin and padding adjustments */
+    background-color: #007BFF; /* Bootstrap primary button color for familiarity */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px; /* Match rounded corners with the modal */
+    transition: background-color 0.2s; /* Smooth background color transition */
+    margin-top: 10px; /* Space from text above */
+}
+
+/* Hover/active states for link */
+.modal a:hover,
+.modal a:focus {
+    background-color: #0056b3; /* Darker shade on hover for effect */
+    color: white;
+    text-decoration: none;
+}
+
+/*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
 

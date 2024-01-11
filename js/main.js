@@ -27,5 +27,3 @@ window.loadFile = function(placeHolder, filePath) {
     });
 }
 
-
-

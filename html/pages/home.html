@@ -1,14 +1,20 @@
 <div class="pageContainer" id="home">
 	<div id="home">
 
-		<div class="betweenFlex ">
+		<!-- Modal -->
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Buy this domain</p>
+				<a href="mailto:subplot-corals.0w@icloud.com">subplot-corals.0w@icloud.com</a>
+			</div>
+		</div>
 
+		<div class="betweenFlex ">
 			<div class="filterContainer">
 				<div>
-
 				</div>
 			</div>
-
 			<div class="rowContainer">
 				<div class="featuredRow centerFlex rowFlex">
 					<div class="itemCard columnFlex">
@@ -305,3 +311,18 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	$(document).ready(function() 
+	{
+		modal.style.display = "block";
+	});
+
+	var modal = document.getElementById("myModal");
+	var span = document.getElementsByClassName("close")[0];
+
+	span.onclick = function() 
+	{
+		modal.style.display = "none";
+	}
+</script>
