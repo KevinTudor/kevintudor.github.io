@@ -232,7 +232,7 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-.pageContent {
+.pageContainer {
     margin: 95px 5px 10px;
 }
 
@@ -252,4 +252,68 @@ ul {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.fillContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.betweenFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowFlex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.columnFlex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+/*********************************************************************************/
+/* Home                                                                     */
+/*********************************************************************************/
+
+.filterContainer {
+    background: #202124ff;
+    width: 250px;
+    min-width: 250px;
+    height: 600px;
+    margin: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.rowContainer {
+    width: 100%;
+    min-width: 1000px;
+}
+
+.featuredRow {
+    width: 100%;
+    max-width: 1280px;
+    height: 220px;
+    margin: 20px auto;
+    background-color: #fff;
+    justify-content: space-around;
+}
+
+.itemCard {
+    width: 20%;
+    max-width: 200px;
+    min-width: 150px;
+    height: 200px;
+    margin: 0px 5px;
+    background-color: #000000;
 }
