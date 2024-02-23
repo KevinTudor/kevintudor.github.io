@@ -257,7 +257,7 @@
 }
 
 /* Close button styling */
-.close {
+#closeHomeModal {
     color: #aaa;
     float: right;
     font-size: 35px; /* Larger close button for easier click */
@@ -266,8 +266,8 @@
 }
 
 /* Hover/active states for close button */
-.close:hover,
-.close:focus {
+#closeHomeModal:hover,
+#closeHomeModal:focus {
     color: #333; /* Darker color for contrast */
     text-decoration: none;
     cursor: pointer;

@@ -1,0 +1,26 @@
+<div class="pageContainer" id="home">
+	<div id="home">
+
+		<!-- Modal -->
+		<div id="modalHomeContainer"></div>
+
+		<div class="betweenFlex ">
+			<div class="filterContainer">
+				<div>
+				</div>
+			</div>
+			<div class="rowContainer">
+				<div id="featuredRow"class="featuredRow centerFlex rowFlex">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() 
+	{
+		window.loadFiles(5, '#featuredRow', 'html/pages/home/contents/featuredCard.html');
+		window.loadFile('#modalHomeContainer', 'html/modals/modalHome.html');
+	});
+</script>
