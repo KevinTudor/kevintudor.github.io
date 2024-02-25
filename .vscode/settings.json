@@ -1,5 +1,7 @@
 {
     "java.jdt.ls.java.home": "",
     "spring-boot.ls.java.home": "",
-    "java.dependency.packagePresentation": "hierarchical"
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "automatic"
 }
