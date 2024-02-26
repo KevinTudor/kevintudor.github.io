@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition" template="/WEB-INF/layout/baseLayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <!-- <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" /> -->
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+
+    <definition name="tile.homes" extends="base.definition">
+        <put-attribute name="title" value="Home Page" />
+        <put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+    </definition>
+    <!-- Define other pages here -->
+</tiles-definitions>
+
+ <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+   <property name="definitions">
+     <list>
+       <value>/WEB-INF/defs/general.xml</value>
+       <value>/WEB-INF/defs/widgets.xml</value>
+       <value>/WEB-INF/defs/administrator.xml</value>
+       <value>/WEB-INF/defs/customer.xml</value>
+       <value>/WEB-INF/defs/templates.xml</value>
+     </list>
+   </property>
+ </bean>

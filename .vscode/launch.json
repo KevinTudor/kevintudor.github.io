@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RefinedshopperApplication<refinedshopper>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.refinedshopper.refinedshopper.RefinedshopperApplication",
+            "projectName": "refinedshopper",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
