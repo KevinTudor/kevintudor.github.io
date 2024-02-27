@@ -10,7 +10,9 @@
       <div id="home">
     
         <!-- Modal -->
-        <div id="modalHomeContainer"></div>
+        <div id="modalHomeContainer">
+          <div th:replace="~{views/components/modals/modalHome :: modalFragment}"></div>
+        </div>
     
         <div class="betweenFlex ">
           <div class="filterContainer">
@@ -19,9 +21,11 @@
           </div>
 
           <div class="rowContainer">
-            <th:block th:each="i : ${#numbers.sequence(1,5)}">
-              <div th:replace="~{views/components/cardTemplate :: cardTemplate}"></div>
-            </th:block>
+            <div id="featuredRow" class="featuredRow centerFlex rowFlex">
+              <th:block th:each="i : ${#numbers.sequence(1,5)}">
+                <div th:replace="~{views/components/cardTemplate :: cardTemplate}"></div>
+              </th:block>
+            </div>
           </div>
 
         </div>

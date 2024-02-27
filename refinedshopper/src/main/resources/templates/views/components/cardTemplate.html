@@ -2,9 +2,8 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <body>
 
-<div th:fragment="cardTemplate"
-    id="featuredRow" class="featuredRow centerFlex rowFlex">
-    <div class="itemCard columnFlex">
+<div class="itemCard columnFlex"
+    th:fragment="cardTemplate">
     <div class="itemImage">
         <img src="images/pics04.jpg" alt="">
     </div>
@@ -22,7 +21,6 @@
         <h2>$397.00</h2>
         <a href="https://www.amazon.com/" target="_blank"><p>Amazon.com</p></a>
     </div>
-</div>
 </div>
 
 </body>
