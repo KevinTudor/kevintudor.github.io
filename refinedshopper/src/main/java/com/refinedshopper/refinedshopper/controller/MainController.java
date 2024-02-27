@@ -14,4 +14,9 @@ public class MainController {
         return "home";
     }
 
+    @GetMapping("/test")
+    public String home() {
+        return "home"; // This refers to 'home.html'
+    }
+
 }
