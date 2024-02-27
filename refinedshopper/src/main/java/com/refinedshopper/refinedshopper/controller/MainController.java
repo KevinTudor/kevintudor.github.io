@@ -14,10 +14,10 @@ public class MainController {
         return "home";
     }
 
-    @GetMapping("/test")
+    @GetMapping("/")
     public String home(@RequestParam(value = "name", defaultValue = "HAHAH") String name, Model model) {
         model.addAttribute("name", name);
-        return "home";
+        return "views/home/index";
     }
 
 }
