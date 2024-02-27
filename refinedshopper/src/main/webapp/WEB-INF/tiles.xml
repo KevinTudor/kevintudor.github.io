@@ -18,15 +18,3 @@
     </definition>
     <!-- Define other pages here -->
 </tiles-definitions>
-
- <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
-   <property name="definitions">
-     <list>
-       <value>/WEB-INF/defs/general.xml</value>
-       <value>/WEB-INF/defs/widgets.xml</value>
-       <value>/WEB-INF/defs/administrator.xml</value>
-       <value>/WEB-INF/defs/customer.xml</value>
-       <value>/WEB-INF/defs/templates.xml</value>
-     </list>
-   </property>
- </bean>

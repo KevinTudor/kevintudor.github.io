@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-  layout:decorate="~{layout.html}">
+  layout:decorate="~{/layout.html}">
 <head>
-  <title>Content page</title>
-  <script src="content-script.js"></script>
+  <title>RS | Homepage - Refine Your Search</title>
 </head>
 <body>
   <section layout:fragment="content">
     <p>This is a paragraph from the content pages</p>
+    <p th:text="'Welcome, ' + ${name} + '!'"></p>
   </section>
 </body>
 </html>

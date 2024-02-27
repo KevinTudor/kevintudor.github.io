@@ -15,8 +15,9 @@ public class MainController {
     }
 
     @GetMapping("/test")
-    public String home() {
-        return "home"; // This refers to 'home.html'
+    public String home(@RequestParam(value = "name", defaultValue = "HAHAH") String name, Model model) {
+        model.addAttribute("name", name);
+        return "home";
     }
 
 }

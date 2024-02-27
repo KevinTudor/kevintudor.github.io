@@ -1,0 +1,429 @@
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#headerContent {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#header
+{
+    background: #202124ff;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(45, 45, 45, 0.5);
+}
+
+.headerLeft
+{
+    background: inherit;
+    width: 25%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.headerMiddle{
+    background: inherit;
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SEARCHBAR */
+
+.headerMiddle form {
+    display: flex;
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.headerMiddle input[type="text"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-right: -1px;
+    font-size: 16px;
+    border: 2px solid #34495E;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: white;
+    background-color: #34495E;
+}
+
+.headerMiddle input::placeholder {
+    color: #95A5A6;
+}
+
+.headerMiddle button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.headerMiddle button[type="submit"]:hover {
+    background-color: #1ABC9C;
+}
+
+.headerRight
+{
+    background: inherit;
+    width: 25%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav */
+
+#nav > ul > li
+{
+    float: left;
+}
+
+#nav > ul > li > a,
+#nav > ul > li > span
+{
+    display: block;
+    margin-left: 0.7em;
+    padding: 0.80em 1.2em;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    outline: 0;
+    color: #333;
+}
+
+#nav li.active a
+{
+    background: #e95d3c;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+#nav > ul > li > ul
+{
+    display: none;
+}
+
+/* Menu */
+
+#menu {
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    overflow: hidden;
+    margin-left: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    background-color: inherit;
+    border: 3px;
+    border-color: #000;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+}
+
+#menu:hover {
+    background-color: rgba(45, 45, 45, 1);
+    border-radius: 50px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 19px; /* width of the bars */
+    height: 2px; /* thickness of the bars */
+    background-color: #9aa0a6ff; /* color of the bars */
+    transition: 0.4s;
+    border-radius: 5px;
+  }
+
+/* Logo */
+
+#logo
+{
+    height: inherit;
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+}
+
+    #logo h1 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0px;
+    }
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+#footer
+{
+    background: #202124ff;
+    height: 85px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(45, 45, 45, 0.5);
+}
+
+.footerLeft
+{
+    background: inherit;
+    width: 25%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.footerMiddle{
+    background: inherit;
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerRight
+{
+    background: inherit;
+    width: 25%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*********************************************************************************/
+/* dialog popup                                                                   */
+/*********************************************************************************/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black with higher opacity for better focus on modal */
+}
+
+/* Modal Content box styling */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; /* Lowered percentage to bring modal higher on the page */
+    padding: 40px; /* More padding for a better visual appeal */
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* No border for a cleaner look */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    max-width: 600px; /* Maximum width so it doesn't get too wide on larger screens */
+    width: 90%; /* Responsive width */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Close button styling */
+#closeHomeModal {
+    color: #aaa;
+    float: right;
+    font-size: 35px; /* Larger close button for easier click */
+    font-weight: bold;
+    margin-left: 20px; /* Added space between text and close button */
+}
+
+/* Hover/active states for close button */
+#closeHomeModal:hover,
+#closeHomeModal:focus {
+    color: #333; /* Darker color for contrast */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Text and link styling inside modal */
+.modal p {
+    margin: 0px; /* Space out text */
+    color: #333; /* Darker text for readability */
+    font-size: 16px; /* Standard text size */
+}
+
+.modal a {
+    display: inline-block; /* Allows margin and padding adjustments */
+    background-color: #007BFF; /* Bootstrap primary button color for familiarity */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px; /* Match rounded corners with the modal */
+    transition: background-color 0.2s; /* Smooth background color transition */
+    margin-top: 10px; /* Space from text above */
+}
+
+/* Hover/active states for link */
+.modal a:hover,
+.modal a:focus {
+    background-color: #0056b3; /* Darker shade on hover for effect */
+    color: white;
+    text-decoration: none;
+}
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+.pageContainer {
+    margin: 95px 5px 10px;
+}
+
+body
+{
+    background: #202020 url(/images/img01.jpg) repeat;
+    display: block;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.divider {
+    background: #fff;
+    width: 100%;
+    height: 2px;
+}
+
+.starf {
+    font-size:100%;
+    color:#fac02dff;
+}
+
+.gradient-text {
+    background-image: linear-gradient(45deg, rgb(56, 56, 231), rgb(0, 255, 68));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.fillContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.betweenFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowFlex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.columnFlex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+/*********************************************************************************/
+/* Home                                                                     */
+/*********************************************************************************/
+
+.filterContainer {
+    background: #202124ff;
+    width: 250px;
+    min-width: 250px;
+    height: 600px;
+    margin: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.rowContainer {
+    width: 100%;
+    min-width: 1000px;
+}
+
+.featuredRow {
+    width: 100%;
+    max-width: 1280px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: inherit;
+    justify-content: space-around;
+}
+
+.itemCard {
+    width: 20%;
+    max-width: 250px;
+    min-width: 150px;
+    height: 100%;
+    margin: 0px 5px;
+    background-color: #202124ff;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+    .itemCard img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        max-height: 246px;
+    }
+
+    .itemCard h2 {
+        color: #fff;
+        margin: 10px;
+        font-size: medium;
+    }
+
+    .itemCard p {
+        color: #fff;
+        margin: 10px;
+        font-size: small;
+    }
+
+.itemImage {
+    width: 100%;
+}
+
