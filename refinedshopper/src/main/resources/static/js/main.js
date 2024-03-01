@@ -1,6 +1,7 @@
 // MAIN JS
 
 var specificPagePath = ''; // Global variable to store the specific page path
+var showModals = false;
 
 window.loadTemplate = function(placeHolder, templatePath, contentPath) {
     specificPagePath = contentPath; // Store the page path
@@ -45,7 +46,6 @@ window.loadFiles = function(num, placeHolder, filePath) {
 };
 
 // Modals
-var showModals = true;
 
 function displayModal(modalID, closeButton, pathName) {
     if (showModals == true) {

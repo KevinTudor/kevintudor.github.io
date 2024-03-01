@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{/layout.html}">
+<head>
+  <title>RS | Homepage - Refine Your Search</title>
+</head>
+<body>
+    <section layout:fragment="content">
+
+
+        
+        <h2>Welcome, <span th:text="${name}"></span>!</h2>
+        <nav style="background-color: #444; color: #fff; padding: 10px;">
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                <li style="display: inline; margin-right: 10px;"><a href="#" style="color: #fff; text-decoration: none;">Home</a></li>
+                <li style="display: inline; margin-right: 10px;"><a href="#" style="color: #fff; text-decoration: none;">About</a></li>
+                <li style="display: inline; margin-right: 10px;"><a href="#" style="color: #fff; text-decoration: none;">Contact</a></li>
+            </ul>
+        </nav>
+        <div style="padding: 20px;">
+            <h2 style="color: #333;">About Us</h2>
+            <p style="color: #555;">We are a team of passionate individuals dedicated to creating amazing websites.</p>
+        </div>
+
+
+    </section>
+</body>
+</html>

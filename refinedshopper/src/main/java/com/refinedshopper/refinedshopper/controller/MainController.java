@@ -7,12 +7,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MainController {
-    
-    @GetMapping("/World")
-    public String World(@RequestParam(value = "name", defaultValue = "Worlds") String name, Model model) {
-        model.addAttribute("name", name);
-        return "home";
-    }
 
     @GetMapping("/")
     public String home(@RequestParam(value = "name", defaultValue = "HAHAH") String name, Model model) {
@@ -20,4 +14,11 @@ public class MainController {
         return "views/home/index";
     }
 
+    @GetMapping("/profile")
+    public String profilePage(@RequestParam(value = "name", defaultValue = "HAHAH") String name, Model model) {
+        model.addAttribute("name", name);
+        return "views/profile/profilePage";
+    }
+
 }
+
